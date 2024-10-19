@@ -3,6 +3,8 @@
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
+local b = w:CreateFolder("Speed")
+b:Box("Speed","number",function(val) S = val end)
 
 -- Set the desired speed
 local speedMultiplier = 2 -- Change this value to increase or decrease speed
